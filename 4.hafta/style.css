@@ -8,4 +8,8 @@ section{
  
 
 }
+img:hover {
+    transition: transform .3s;
+    transform: scale(1.1);
+}
 
