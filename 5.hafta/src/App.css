@@ -1,0 +1,16 @@
+#content , #left {
+  height: 92vh;
+}
+img:hover {
+  transition: transform .3s;
+  transform: scale(1.1);
+}
+i:hover {
+  transition: transform .3s;
+  transform: scale(1.4);
+}
+.nav-item:hover {
+  transition: transform .1s;
+  transform: scale(1.2);
+  font-weight: bolder;
+}
