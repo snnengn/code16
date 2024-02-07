@@ -1,10 +1,10 @@
 import { Products } from "../products"
 
-function Home() {
+function Home({user}) {
   
   return (
     <>
-    <Products />
+    <Products user={user}/>
     </>
   )
 }

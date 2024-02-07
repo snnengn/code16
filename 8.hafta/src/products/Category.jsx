@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import ProductCard from './ProductCard'
 
-function Category() {
+function Category({user}) {
 
     const {categoryName}= useParams()
     console.log(categoryName)

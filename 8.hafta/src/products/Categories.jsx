@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-function Categories() {
+function Categories({user}) {
     const[categories, setCategories]= useState([])
     useEffect(() => {
         fetch('https://fakestoreapi.com/products/categories')
