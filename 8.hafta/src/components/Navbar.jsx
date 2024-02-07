@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom'
 
-function Navbar() {
+function Navbar({user, handleLogOut}) {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary shadow d-flex justify-content-between">
   <div className="container">
@@ -20,6 +20,14 @@ function Navbar() {
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button className="btn btn-outline-success " type="submit">Search</button>
       </form>
+      {
+        user?
+        <>
+        <NavLink className="nav-link" to="/fav">Favoriler</NavLink>      
+        <button className='nav-link' onClick={handleLogOut}>Çıkış Yap ({user.name}) </button>
+        </>:
+        <NavLink className="nav-link" to="/login">Giriş</NavLink>
+      }
     </div>
   </div>
 </nav>

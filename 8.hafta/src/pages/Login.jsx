@@ -1,8 +1,11 @@
 import React from 'react'
 
-function Login() {
+function Login({handleLogin}) {
   return (
-    <div>Login</div>
+    <>
+    <h1> Giriş</h1>
+    <button onClick={handleLogin} className='btn btn-primary'>Giriş Yap</button>
+    </>
   )
 }
 

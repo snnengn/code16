@@ -3,7 +3,7 @@ import React from 'react'
 const Sepet = ({sepet, bosSepet}) => {
     const toplam = sepet.reduce((acc, item) => acc + item.fiyat + 29, 0)
 
-    if(sepet.lenght === 0) return;
+    if(sepet.length === 0) return;
   return (
     <div className='border sticky top-20 bg-white ml-auto w-72 p-4 mt-2 rounded-lg shadow-xl'>
 <h2 className='text-2xl font-semibold mb-4'>Sepet</h2>
