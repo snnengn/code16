@@ -15,9 +15,22 @@ function Product({user}) {
 
   return (
     <>
-    <h1 className="mt-5">{product.title}</h1>
-    <img src={product.image} className="w-100 img-thumbnail" alt={product.title} />
-    <p>{product.description}</p>
+    <h3 className="my-4 border rounded bg-light py-2 text-center">{product.title}</h3>
+    <div className="row">
+    <div className="col col-sm-6 mb-5">
+      <img src={product.image} className="w-100 img-thumbnail p-3" alt={product.title} />
+    
+    </div>
+    <div className="col col-sm-6">
+      <p>{product.description}</p>
+      <h4 className="my-4">{product.price} TL</h4>
+      <div className="d-flex justify-content-between mb-3 ">      
+      
+      <a href="#" className="btn btn-primary w-100">Sepete Ekle</a>
+      <span className="fw-bolder fs-4 text-end ms-3"><i className="fa-solid fa-heart text-danger"></i></span>
+      </div>
+    </div>
+    </div>
     </>
 
   )

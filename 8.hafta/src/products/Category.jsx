@@ -17,7 +17,7 @@ function Category({user}) {
 
   return (
     <>
-    <h4 className='my-4'> {categoryName} </h4>
+    <h4 className='my-4 border rounded bg-light py-2 text-center'> {categoryName.charAt(0).toUpperCase() + categoryName.slice(1)} </h4>
 
     <div className='row row-cols-sm-2 row-cols-md-3'>
         {categoryProducts.map(item=><ProductCard key={item.id} item={item} />)}

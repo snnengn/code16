@@ -1,5 +1,17 @@
-#root {
+
+#cardImage {
+    height: 350px;
+    margin: auto;
+    object-fit: scale-down;
+
+}
+#cardImage:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
 
 }
 
-
+#submenu {
+ height: 45px;
+ background-color: rgb(77, 105, 131);
+}

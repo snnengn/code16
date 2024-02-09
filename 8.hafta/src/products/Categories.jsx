@@ -11,8 +11,8 @@ function Categories({user}) {
   return (
     <>
     
-    <div className="list-group mt-5">
-      <span className='list-group-item list-group-item-action fw-bold'>Kategoriler</span>
+    <div className="list-group mt-4">
+      <span className='list-group-item list-group-item-action fw-bold bg-light'>Kategoriler</span>
         {
             categories.map((category,index) =>
             <Link
@@ -20,7 +20,7 @@ function Categories({user}) {
             className="list-group-item list-group-item-action"
             to={`/products/category/${category}`}
             >
-            {category.toUpperCase()}
+            {category.charAt(0).toUpperCase() + category.slice(1)}
             </Link>
             )
         }
