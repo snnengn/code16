@@ -1,10 +1,11 @@
 # Bursa Plajları Sitesi
 
-Bu projede code16 akademisi boyunca öğrendiğim tüm bilgileri kullanma fırsatı buldum.
-Axios kullanılarak Açık Şehir Bursa apisi ile veriler çekildi.
-Google Fonts ve Font Awesome apileri ile özel font ve iconlar kullanıldı.
-React Bootstrap ile stillendirme yapıldı.
-React Router Dom ile navigasyon yapıldı.
-React Weather ile bölgeye göre hava durumu bilgileri eklendi.
+Bu projede code16 akademisi boyunca öğrendiğim tüm bilgileri kullanma fırsatı buldum. <br>
+Axios kullanılarak Açık Şehir Bursa apisi ile veriler çekildi.<br>
+Google Fonts ve Font Awesome apileri ile özel font ve iconlar kullanıldı.<br>
+React Bootstrap ile stillendirme yapıldı.<br>
+React Router Dom ile navigasyon yapıldı.<br>
+React Weather ile bölgeye göre hava durumu bilgileri eklendi.<br><br>
+Vercel Sayfası=> [Bursa Plajları](https://bursaplajlari.vercel.app/).
 
 ![React ile Bursa Plajları Sitesi](preview.gif)
