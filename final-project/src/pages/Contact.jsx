@@ -15,7 +15,13 @@ function Contact() {
         <li>Telefon: 153 - 444 16 00</li>
         <li>Adres: Zafer Mh. Ankara Yolu Cd. C Blok No:1  PK:16080 Osmangazi / BURSA </li>
         <li>E-Posta: beyazmasa@bursa.bel.tr</li>
+        <li><iframe
+                  frameBorder="0" style={{border:0, borderRadius:10, width:500, height:300}}
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCATKrqYuD0JSQA5_BvSIyh3hEXRM1oV9Y&q=Bursa+Buyuksehir+Belediyesi"
+                  allowFullscreen>
+            </iframe></li>
     </ul>
+    
 
     <h3 className='my-5 text-center'>İstek, Şikayet, Öneri Formu</h3>
     <div>
