@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 import SiteRoutes from "./SiteRoutes";
+import data from "/src/data/data.json"
 
 function App() {
   const [data, setData] = useState([]);
