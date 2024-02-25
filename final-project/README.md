@@ -7,4 +7,4 @@ React Bootstrap ile stillendirme yapıldı.
 React Router Dom ile navigasyon yapıldı.
 React Weather ile bölgeye göre hava durumu bilgileri eklendi.
 
-![React ile Bursa Plajları Sitesi](/final_project/preview.gif)
+![React ile Bursa Plajları Sitesi](preview.gif)
