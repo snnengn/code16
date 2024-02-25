@@ -1,33 +1,34 @@
+import Card from "react-bootstrap/Card";
+import Col from "react-bootstrap/Col";
+import { Link } from "react-router-dom";
 
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-
-function Cards({data}) {
+function Cards({ plaj }) {
   return (
-    <Row className='container mx-auto my-3 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4'>
-                {data.map(card => (
-                <Col>
-
-          <Card className='h-100 border-0 shadow'>
-            <Card.Img src={card.image}
-            alt='...'
-            position='top'
-            className=''
-            style={{height:250}}
+    <Link className="text-decoration-none" to={`/plajlar/${plaj.id}`}>
+      <Col className="my-2">
+        <Card className="h-100 border-0 shadow">
+          <Card.Img
+            src={plaj.image}
+            alt="..."
+            position="top"
+            className=""
+            style={{ height: 250 }}
           />
-            <Card.Body>
-              <Card.Title>{card.ADI}</Card.Title>
-              <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-                  ))}
-    </Row>
+          <Card.Body>
+            <Card.Title>{plaj.ADI}</Card.Title>
+            <p className="text-body-tertiary">{plaj.MAHALLE}-{plaj.ILCE}</p>
+            <Card.Text>
+              <p>Uzunluk: <h6>{plaj.PLAJ_UZUNL}</h6></p>
+              <p>Genişlik: <h6>{plaj.ORTALAMA_G}</h6></p>
+              <p>Soyunma Kabini: <h6>{plaj.SOYUNMA_KA} adet</h6></p>
+              <p>Duş: <h6>{plaj.DUS_ADET} adet</h6></p>
+              <p>Tuvalet: <h6>{plaj.TUVALET_AD} adet</h6></p>
+              <p>Otopark: <h6>{plaj.OTOPARK_DU} adet</h6></p>
+            </Card.Text>
+          </Card.Body>
+        </Card>
+      </Col>
+    </Link>
   );
 }
 
