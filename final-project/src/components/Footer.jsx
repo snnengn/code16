@@ -12,7 +12,7 @@ function Footer() {
       </a>
           </div>
 
-<div className="mb-md-0 text-body-secondary text-wrap fw-medium">© 2024 BBB Halk Plajları by Sinan Engin</div>
+<div className="mb-md-0 text-body-secondary text-wrap fw-medium">© 2024 Sinan Engin</div>
 <div className='d-flex col justify-content-end '>    
     <ul className="nav col justify-content-end align-items-center list-unstyled d-flex fs-5">
     <li className="ms-3 fs-6">Bizi Takip Edin: </li> 
