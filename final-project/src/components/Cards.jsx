@@ -28,8 +28,7 @@ function Cards({ plaj }) {
             </Card.Text>
             <div className="w-100">
               <iframe
-                  frameBorder="0" style={{border:0, borderRadius:10}}
-                  src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyCATKrqYuD0JSQA5_BvSIyh3hEXRM1oV9Y&q=${plaj.ADI}`}
+                  frameBorder="0" style={{border:0, borderRadius:10}
                   allowFullscreen>
             </iframe> </div>
           </Card.Body>
